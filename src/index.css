@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply text-zinc-900;
+  }
+
+  a {
+    @apply text-blue-600 transition-colors hover:text-blue-500;
+  }
+
+  p {
+    @apply text-zinc-700;
+  }
+
+  svg {
+    @apply stroke-zinc-600 transition-colors hover:stroke-zinc-900;
+  }
+}
+
+@layer utilities {
+  .main_wrapper {
+    @apply w-full max-w-xl mx-auto px-4;
+  }
+}
