@@ -1,18 +1,20 @@
 import WelcomingText from "../atoms/WelcomingText";
-import LabelName from "../atoms/LabelName";
+import LabelText from "../atoms/LabelText";
 import { Link } from "react-router";
 
 export default function Welcoming() {
   return (
-    <section className="space-y-2">
+    <section>
       <div>
-        <LabelName>evanalifian</LabelName>
+        <LabelText>evanalifian</LabelText>
         <WelcomingText>Evan Alifian's Blog</WelcomingText>
       </div>
-      <p>
-        Here, i share my thoughts about what's happening to me. Reed my all my blog
-        posts <Link to="/blog">here</Link>.
-      </p>
+      <div>
+        <p>Here, i share my thoughts about what's happening to me.</p>
+        <Link to="/blog" className="button solid_button">
+          Read blog
+        </Link>
+      </div>
     </section>
   );
 }
