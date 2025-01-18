@@ -4,7 +4,7 @@ import SocialIcon from "../atoms/SocialIcon";
 
 export default function SocialMedia() {
   return (
-    <ul className="flex gap-x-4 pl-0 my-0 list-none list-outside">
+    <ul className="flex flex-row gap-x-4 pl-0 my-0 list-none list-outside">
       {socials.map((social) => (
         <SocialLink key={social.name} {...social} />
       ))}
