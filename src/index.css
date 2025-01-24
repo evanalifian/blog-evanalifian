@@ -1,35 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  * {
-    @apply text-zinc-900;
-  }
-
-  svg {
-    @apply stroke-zinc-600 transition-colors hover:stroke-zinc-900;
-  }
-}
-
-@layer utilities {
-  .main_wrapper {
-    @apply w-full max-w-xl mx-auto px-4;
-  }
-
-  .label_text {
-    @apply text-sm font-medium
-  }
-
-  .button {
-    @apply flex items-center gap-x-2 w-max h-9 px-3 rounded-lg text-sm font-medium transition-colors
-  }
-
-  .solid_button {
-    @apply bg-zinc-900 text-zinc-50 hover:bg-zinc-800
-  }
-
-  .text_hover {
-    @apply text-zinc-700 transition-colors hover:text-zinc-900
-  }
-}
