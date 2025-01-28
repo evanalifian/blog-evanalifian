@@ -17,7 +17,7 @@ export default function Footer() {
               <ul className="flex flex-col gap-y-2 list-none pl-0 my-0">
                 <li className="text-sm">
                   <Link
-                    to=""
+                    to="https://instagram.com/evanalifian/"
                     target="_blank"
                     className="text-zinc-500 transition-colors hover:text-black"
                   >
@@ -26,7 +26,7 @@ export default function Footer() {
                 </li>
                 <li className="text-sm">
                   <Link
-                    to=""
+                    to="https://x.com/evanalifian/"
                     target="_blank"
                     className="text-zinc-500 transition-colors hover:text-black"
                   >
@@ -35,7 +35,7 @@ export default function Footer() {
                 </li>
                 <li className="text-sm">
                   <Link
-                    to=""
+                    to="https://github.com/evanalifian/"
                     target="_blank"
                     className="text-zinc-500 transition-colors hover:text-black"
                   >
@@ -44,7 +44,7 @@ export default function Footer() {
                 </li>
                 <li className="text-sm">
                   <Link
-                    to=""
+                    to="https://linkedin.com/evanalifian/"
                     target="_blank"
                     className="text-zinc-500 transition-colors hover:text-black"
                   >
@@ -58,7 +58,7 @@ export default function Footer() {
               <ul className="flex flex-col gap-y-2 list-none pl-0 my-0">
                 <li className="text-sm">
                   <Link
-                    to=""
+                    to="/"
                     target="_blank"
                     className="text-zinc-500 transition-colors hover:text-black"
                   >

@@ -8,7 +8,7 @@ export default function HeaderNav() {
         <Link to="/" className="font-medium">
           <span className="text-blue-600">evanalifian</span> - blog
         </Link>
-        <Link to="">
+        <Link to="https://github.com/evanalifian/">
           <Github
             size={18}
             className="stroke-zinc-500 transition-colors hover:stroke-black"
