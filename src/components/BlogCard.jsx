@@ -2,14 +2,14 @@ import { Link } from "react-router";
 
 export function BlogCard({ children }) {
   return (
-    <div className="border border-zinc-300 p-4 rounded-lg space-y-2">
+    <div className="bg-zinc-950/15 border border-zinc-900 p-4 rounded-lg space-y-6">
       {children}
     </div>
   );
 }
 
 export function BlogCardHeader({ children }) {
-  return <div className="flex flex-col">{children}</div>;
+  return <div className="flex flex-col gap-y-1">{children}</div>;
 }
 
 export function BlogCardContent({ children }) {
@@ -17,7 +17,7 @@ export function BlogCardContent({ children }) {
 }
 
 export function BlogCardLabel({ children }) {
-  return <span className="text-sm text-zinc-700 font-medium">{children}</span>;
+  return <span className="text-xs text-gray-400 font-medium">{children}</span>;
 }
 
 export function BlogCardTitile({ children }) {
@@ -25,14 +25,14 @@ export function BlogCardTitile({ children }) {
 }
 
 export function BlogCardText({ children }) {
-  return <p className="text-zinc-700 m-0">{children}</p>;
+  return <p className="m-0">{children}</p>;
 }
 
 export function BlogCardButton({ children, link }) {
   return (
     <Link
       to={link}
-      className="h-10 flex items-center justify-center bg-zinc-700 text-white font-semibold rounded-md m-0 transition-colors hover:bg-zinc-600"
+      className="h-10 flex items-center justify-center bg-zinc-950 text-white font-semibold rounded-md m-0 transition-colors hover:bg-zinc-900"
     >
       {children}
     </Link>

@@ -3,15 +3,26 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router";
 import "./index.css";
 import "./blog.css";
-import Home from "./pages/home/Page";
-import BlogView from "./pages/blogs/Page";
+import HomePage from "./pages/home/HomePage";
+import BlogPage from "./pages/blogs/BlogPage";
+import MainLayout from "./components/MainLayout";
+import { blogs } from "./pages/blogs/BlogRoute";
+import NotFoundPage from "./pages/404/NotFoundPage";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog/:category/:title" element={<BlogView />} />
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route element={<BlogPage />}>
+            {blogs.map(blog => (
+              <Route key={blog.title} path={`/blog/${blog.category}/${blog.title}`} element={blog.content} />
+            ))}
+            {/* <Route path="/blog/:category/:title" element={<BlogPage />} /> */}
+          </Route>
+          <Route path="/*" element={<NotFoundPage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>
