@@ -23,11 +23,7 @@ export default function Footer() {
     more: [
       {
         name: "Portfolio Web",
-        url: "",
-      },
-      {
-        name: "Products",
-        url: "",
+        url: "https://evanalifian.vercel.app/",
       },
     ],
   };
